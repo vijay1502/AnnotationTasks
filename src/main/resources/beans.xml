@@ -6,10 +6,10 @@
        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!-- bean definitions here -->
 
-    <bean id="demobean" class="com.stackroute.domain.BeanPostProcessorDemoBean">
+    <bean id="demobean" class="com.stackroute.demo.BeanLifeCycleDemoBean">
 
     </bean>
-    <context:component-scan base-package="com.stackroute.domain.Actor" />
-   <context:component-scan base-package="com.stackroute.domain.Movie" />
+    <context:component-scan base-package="com.stackroute.demo.Actor" />
+   <context:component-scan base-package="com.stackroute.demo.Movie" />
 
 </beans>

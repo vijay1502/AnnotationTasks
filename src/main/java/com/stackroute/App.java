@@ -1,23 +1,23 @@
 package com.stackroute;
-import com.stackroute.domain.Actor;
-import com.stackroute.domain.Configure;
-import com.stackroute.domain.Movie;
+
+import com.stackroute.demo.Actor;
+import com.stackroute.demo.BeanLifeCycleDemoBean;
+import com.stackroute.demo.Configure;
+import com.stackroute.demo.Movie;
+import org.springframework.beans.factory.BeanFactoryAware;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class App
 {
     public static void main( String[] args )
     {
-        ApplicationContext context = new AnnotationConfigApplicationContext(Configure.class);
-        Actor actor1 = context.getBean("actor1", Actor.class);
-        Actor actor2 = context.getBean("actor2", Actor.class);
-        Actor actor3 = context.getBean("actor3", Actor.class);
-        System.out.println(actor1.toString());
-        System.out.println(actor2.toString());
-        System.out.println(actor3.toString());
-        Movie movie1 = context.getBean("movie1",Movie.class);
-        
-        System.out.println(movie1.toString());
+        ConfigurableApplicationContext context=new AnnotationConfigApplicationContext(Configure.class);
 
-    }
+        BeanLifeCycleDemoBean demoBean=context.getBean("demobean", BeanLifeCycleDemoBean.class);
+        context.close();
+        }
 }
