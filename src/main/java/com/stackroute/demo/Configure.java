@@ -5,13 +5,6 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class Configure{
 
-    @Bean(name="actor")
-    public Actor actor(){
-        Actor actor=new Actor();
-        System.out.println(actor.toString());
-        return actor;
-    }
-
     @Bean(name="movie")
     public Movie movie(){
         Movie movie=new Movie();
@@ -19,12 +12,8 @@ public class Configure{
         return movie;
     }
     @Bean(name="demobean")
-    public BeanLifeCycleDemoBean beanDemo(){
-        BeanLifeCycleDemoBean beanDemo =new BeanLifeCycleDemoBean();
+    public BeanPostProcessorDemoBean beanDemo(){
+        BeanPostProcessorDemoBean beanDemo =new BeanPostProcessorDemoBean();
         return beanDemo;
     }
-
-
-
-
 }

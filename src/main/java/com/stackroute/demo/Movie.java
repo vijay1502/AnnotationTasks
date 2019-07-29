@@ -1,19 +1,13 @@
 package com.stackroute.demo;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 public class Movie {
-
-    private String movieName="Vijay";
-    private Actor actor;
-
-
-    @Override
-    public String toString() {
-        return "Movie{" +
-                "movieName='" + movieName + '\'' +
-                ", actor=" + actor +
-                '}';
+    public Movie() {
+    }
+    private String movieName;
+    private String actor;
+    public Movie(String movieName, String actor) {
+        this.movieName = movieName;
+        this.actor = actor;
     }
 
     public String getMovieName() {
@@ -24,13 +18,13 @@ public class Movie {
         this.movieName = movieName;
     }
 
-    @Autowired
-    public Actor getActor() {
+    public String getActor() {
         return actor;
     }
 
-
-    public void setActor(Actor actor) {
+    public void setActor(String actor) {
         this.actor = actor;
     }
+
+
 }

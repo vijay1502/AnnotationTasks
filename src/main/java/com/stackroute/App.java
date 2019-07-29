@@ -1,23 +1,23 @@
 package com.stackroute;
 
-import com.stackroute.demo.Actor;
-import com.stackroute.demo.BeanLifeCycleDemoBean;
+import com.stackroute.demo.BeanPostProcessorDemoBean;
 import com.stackroute.demo.Configure;
-import com.stackroute.demo.Movie;
-import org.springframework.beans.factory.BeanFactoryAware;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+/**
+ * Hello world!
+ *
+ */
 public class App
 {
     public static void main( String[] args )
     {
-        ConfigurableApplicationContext context=new AnnotationConfigApplicationContext(Configure.class);
+        ApplicationContext context=new AnnotationConfigApplicationContext(Configure.class);
+        BeanPostProcessorDemoBean demoBean=context.getBean("demobean", BeanPostProcessorDemoBean.class);
+        demoBean.postProcessAfterInitialization("movie","Vijay");
+        demoBean.postProcessBeforeInitialization("movie","Vijayas");
 
-        BeanLifeCycleDemoBean demoBean=context.getBean("demobean", BeanLifeCycleDemoBean.class);
-        context.close();
-        }
+    }
 }
