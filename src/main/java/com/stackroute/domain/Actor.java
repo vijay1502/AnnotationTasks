@@ -1,21 +1,21 @@
 package com.stackroute.domain;
 
-import org.springframework.stereotype.Component;
-
-
 public class Actor {
     private String name;
     private String gender;
+
+    @Override
+    public String toString() {
+        return "Actor{" +
+                "name='" + name + '\'' +
+                ", gender='" + gender + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
     private int age;
 
-    public Actor(String name, String gender, int age) {
-        this.name = name;
-        this.gender = gender;
-        this.age = age;
-    }
 
-    public Actor() {
-    }
 
     public String getName() {
         return name;
@@ -33,23 +33,11 @@ public class Actor {
         this.gender = gender;
     }
 
-    @Override
-    public String toString() {
-        return "Actor{" +
-                "name='" + name + '\'' +
-                ", gender='" + gender + '\'' +
-                ", age=" + age +
-                '}';
-    }
-
     public int getAge() {
         return age;
     }
 
     public void setAge(int age) {
         this.age = age;
-    }
-    public  void actorVijay(){
-        System.out.println("Aditya Ambareesha is Super Star of CGI");
     }
 }
