@@ -1,30 +1,26 @@
 package com.stackroute.domain;
-
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.BeanFactoryAware;
+import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.beans.factory.annotation.Autowired;
-
-public class Movie {
-
-    private String movieName="Vijay";
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Component;
+public  class Movie {
     private Actor actor;
-
-
+    public Movie() {
+    }
     @Override
     public String toString() {
         return "Movie{" +
-                "movieName='" + movieName + '\'' +
-                ", actor=" + actor +
+                "actor=" + actor +
                 '}';
     }
-
-    public String getMovieName() {
-        return movieName;
+    public Movie(Actor actor) {
+        this.actor = actor;
     }
-
-    public void setMovieName(String movieName) {
-        this.movieName = movieName;
-    }
-
-
     public Actor getActor() {
         return actor;
     }
