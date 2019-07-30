@@ -1,11 +1,2 @@
 
-zsquid:UselessImportCheck"ORemove this unused import 'org.springframework.beans.factory.BeanFactoryAware'.(™ºÌë8Î¦çÃ-
-vsquid:UselessImportCheck"KRemove this unused import 'org.springframework.context.ApplicationContext'.(»Ô»¿8Î¦çÃ-
-squid:UselessImportCheck"_Remove this unused import 'org.springframework.context.support.ClassPathXmlApplicationContext'.(•ËÛüÿÿÿÿ8¹™©çÃ-
-[
-squid:S106"9Replace this use of System.out or System.err by a logger.(Õ÷™©üÿÿÿÿ8Î¦çÃ-
-_squid:S1854"<Remove this useless assignment to local variable "demoBean".(ß‹Èäúÿÿÿÿ8²šÊçÃ-
-‹squid:UselessImportCheck"[Remove this unused import 'org.springframework.context.support.AbstractApplicationContext'.(‘í½ûÿÿÿÿ8Î¦çÃ-
-V
-squid:S106"9Replace this use of System.out or System.err by a logger.(ÁÏÂ¼8Î¦çÃ-
-Psquid:S1481"-Remove this unused "demoBean" local variable.(ß‹Èäúÿÿÿÿ8²šÊçÃ-
+squid:UselessImportCheck"_Remove this unused import 'org.springframework.context.support.ClassPathXmlApplicationContext'.(•ËÛüÿÿÿÿ8›‰ûöÃ-

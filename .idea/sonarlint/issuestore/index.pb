@@ -7,9 +7,7 @@ L
 src/main/resources/beans.xml,3/9/391dcc488988192fbd8ef1f6b10cb4923f354042
 U
 %src/main/java/com/stackroute/App.java,9/c/9cebadc2e7bfb8164801d803b6a763987e90abed
-\
-,src/main/java/com/stackroute/demo/Actor.java,4/e/4e950e049d025b592f6ce960222aa1a0492f9f23
-l
-<src/main/java/com/stackroute/demo/BeanLifeCycleDemoBean.java,0/6/06ae182f6d26570796d8228a65e5948491c23741
 `
 0src/main/java/com/stackroute/demo/Configure.java,5/1/517994ac05e898f37b244c4f07c8ec04c75b0281
+p
+@src/main/java/com/stackroute/demo/BeanPostProcessorDemoBean.java,c/1/c19634f6ababd17de79ac3d3a27e8ff5ed2b57d0
